@@ -1,0 +1,17 @@
+<div class="animate fadeIn fast ">
+    <div class="row row-cols-1 row-cols-md-3" >
+
+      <div class="col mb-4 animated fadeIn fast" *ngFor="let metropolitana of trenMetrop" >
+        <div class="card h-100"   >
+          <img [src]="metropolitana.img" class="card-img-top" [alt]="metropolitana.Estacion" width="25px" height="200px">
+          <div class="card-body" >
+            <h5 class="card-title">{{metropolitana.Estacion}} </h5>
+            <button type="button" class="btn btn-outline-primary"> ver mas..</button>
+          </div>
+        </div>
+      </div>
+ 
+      </div>
+      <button type="button" (click)="navegarTrenAnterior()" class="btn btn-dark" style="height:45px; width:85px " > Volver</button>
+
+</div>
